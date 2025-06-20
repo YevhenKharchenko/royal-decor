@@ -1,0 +1,77 @@
+.hero-section {
+}
+
+.hero-bg-wrapper {
+  padding-top: 114px;
+  padding-bottom: 80px;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  max-width: 375px;
+  margin: 0 auto;
+  position: relative;
+
+  @include media(desktop) {
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+    padding-top: 86px;
+    padding-bottom: 478px;
+    max-width: 1440px;
+  }
+}
+
+.hero-container {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include media(desktop) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.hero-title-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+
+  @include media(desktop) {
+    margin-left: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.hero-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 76px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+    max-width: 650px;
+  }
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-basket-img {
+  @include media(desktop) {
+    position: absolute;
+    bottom: 178px;
+    right: 0;
+  }
+}
+
+.hero-sign-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    bottom: 150px;
+    left: 571px;
+  }
+}

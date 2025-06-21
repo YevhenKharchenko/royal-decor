@@ -1,12 +1,12 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
-const featuresLeftArrow = document.getElementById('featuresLeftArrow');
-const featuresRightArrow = document.getElementById('featuresRightArrow');
+const highlightsLeftArrow = document.getElementById('highlightsLeftArrow');
+const highlightsRightArrow = document.getElementById('highlightsRightArrow');
 
-let featuresSwiper;
+let highlightsSwiper;
 
-featuresSwiper = new Swiper('.features-swiper-container', {
+highlightsSwiper = new Swiper('.highlights-swiper-container', {
   direction: 'horizontal',
   loop: false,
   grabCursor: true,
@@ -28,26 +28,26 @@ featuresSwiper = new Swiper('.features-swiper-container', {
   on: {
     init: () => {
       document
-        .querySelector('.features-swiper-container')
+        .querySelector('.highlights-swiper-container')
         .classList.add('show');
     },
     slideChange: function () {
-      updateFeaturesArrows(this);
+      updateHighlightsArrows(this);
     },
   },
 });
 
-updateFeaturesArrows(featuresSwiper);
+updateHighlightsArrows(highlightsSwiper);
 
-function updateFeaturesArrows(swiper) {
-  featuresLeftArrow.disabled = swiper.isBeginning;
-  featuresRightArrow.disabled = swiper.isEnd;
+function updateHighlightsArrows(swiper) {
+  highlightsLeftArrow.disabled = swiper.isBeginning;
+  highlightsRightArrow.disabled = swiper.isEnd;
 }
 
-featuresLeftArrow.addEventListener('click', () => {
-  featuresSwiper.slidePrev();
+highlightsLeftArrow.addEventListener('click', () => {
+  highlightsSwiper.slidePrev();
 });
 
-featuresRightArrow.addEventListener('click', () => {
-  featuresSwiper.slideNext();
+highlightsRightArrow.addEventListener('click', () => {
+  highlightsSwiper.slideNext();
 });

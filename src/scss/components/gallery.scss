@@ -22,19 +22,6 @@
 .gallery-container {
   padding-left: 0;
   padding-right: 0;
-
-  @include media(desktop) {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-}
-
-.gallery-title {
-  padding-left: 20px;
-
-  @include media(desktop) {
-    padding-left: 0;
-  }
 }
 
 .gallery-swiper-container {
@@ -54,4 +41,45 @@
 
 .gallery-slide {
   max-width: 305px;
+}
+
+.controls {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    gap: 20px;
+  }
+}
+
+.arrow-btn {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
+  }
 }

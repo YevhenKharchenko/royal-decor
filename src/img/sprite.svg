@@ -12,5 +12,8 @@
     <symbol id="icon-right-arrow" viewBox="0 0 32 32">
       <path d="M5.44 20.106v-8h10.667V5.653L26.56 16.106 16.107 26.559v-6.453H5.44z"/>
     </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 14 6">
+      <path d="M13.7293 0.810272C14.0557 2.41543 14.0872 4.06658 13.8223 5.68302L0.5 3.5L13.7293 0.810272Z" fill="#2E8097"/>
+    </symbol>
   </defs>
 </svg>

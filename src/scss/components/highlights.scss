@@ -1,4 +1,4 @@
-.features-section {
+.highlights-section {
   padding-bottom: 80px;
 
   @include media(desktop) {
@@ -6,7 +6,7 @@
   }
 }
 
-.features-section-wrapper {
+.highlights-section-wrapper {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -17,21 +17,13 @@
   }
 }
 
-.features-container {
+.highlights-container {
   padding-left: 0;
   padding-right: 0;
 }
 
-.features-section-title {
-  padding-left: 20px;
-
-  @include media(desktop) {
-    padding-left: 80px;
-  }
-}
-
-.features-swiper-container {
-  max-width: 305px;
+.highlights-swiper-container {
+  max-width: 306px;
   margin-left: auto;
   margin-right: auto;
 
@@ -40,39 +32,40 @@
   }
 }
 
-.features-swiper-container.show {
+.highlights-swiper-container.show {
   visibility: visible;
 }
 
-.features-slide {
-  max-width: 305px;
+.highlights-slide {
+  max-width: 306px;
 }
 
-.features-picture-wrapper {
+.highlights-picture-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 12px;
 }
 
-.features-title {
-  font-family: 'Fredoka', sans-serif;
+.highlights-title {
+  font-family: 'Playfair Display', sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5;
+  text-transform: uppercase;
   text-align: center;
-  color: #327447;
-  margin-bottom: 12px;
+  color: #3a2e2e;
+  margin-bottom: 18px;
 }
 
-.features-text {
-  font-family: 'Nunito', sans-serif;
+.highlights-text {
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #2e4c2f;
-  max-width: 221px;
+  color: #3a2e2e;
+  max-width: 266px;
   margin-left: auto;
   margin-right: auto;
 }

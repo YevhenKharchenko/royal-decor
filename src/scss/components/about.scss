@@ -8,9 +8,6 @@
 
   @include media(desktop) {
     padding-bottom: 150px;
-    max-width: 1440px;
-    margin: 0 auto;
-    position: relative;
   }
 }
 
@@ -24,14 +21,6 @@
   }
 }
 
-.about-title {
-  padding-left: 20px;
-
-  @include media(desktop) {
-    padding-left: 0;
-  }
-}
-
 .about-bg-img {
   margin-left: auto;
   margin-right: auto;
@@ -42,26 +31,15 @@
   }
 }
 
-.about-img-desk {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    left: 617px;
-    bottom: 141px;
-  }
-}
-
 .about-content-wrapper {
   @include media(desktop) {
     padding-left: 0;
     padding-right: 0;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: start;
-    align-items: start;
-    gap: 20px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
   }
 }
 
@@ -72,15 +50,16 @@
   @include media(desktop) {
     padding-left: 0;
     padding-right: 0;
-    max-width: 630px;
+    max-width: 845px;
   }
 }
 
 .about-text {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
   color: #000;
   word-break: break-word;
 }
